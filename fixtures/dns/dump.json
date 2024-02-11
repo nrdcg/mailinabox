@@ -1,0 +1,48 @@
+[
+  [
+    "example1.com",
+    [
+      {
+        "explanation": "Required. Specifies the hostname (and priority) of the machine that handles @example.com mail.",
+        "qname": "example1.com",
+        "rtype": "MX",
+        "value": "10 box.example1.com."
+      }
+    ]
+  ],
+  [
+    "example2.com",
+    [
+      {
+        "explanation": "Required. Specifies the hostname (and priority) of the machine that handles @example.com mail.",
+        "qname": "example2.com",
+        "rtype": "MX",
+        "value": "10 box.example2.com."
+      }
+    ]
+  ],
+  [
+    "example3.com"
+  ],
+  [
+    "example4.com",
+    [
+      {
+        "explanation": "Required. Specifies the hostname (and priority) of the machine that handles @example.com mail.",
+        "qname": "example4.com",
+        "rtype": "MX",
+        "value": "10 box.example4.com."
+      },
+      {
+        "qname": "example4.com",
+        "rtype": "A",
+        "value": "10.0.0.1"
+      },
+      {
+        "qname": "example4.com",
+        "rtype": "TXT",
+        "value": "data"
+      }
+    ]
+  ]
+]

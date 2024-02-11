@@ -1,0 +1,7 @@
+[
+  {
+    "qname": "example.com",
+    "rtype": "MX",
+    "value": "10 example.com."
+  }
+]
