@@ -1,0 +1,17 @@
+[
+  {
+    "type": "heading",
+    "text": "System",
+    "extra": []
+  },
+  {
+    "type": "warning",
+    "text": "This domain's DNSSEC DS record is not set",
+    "extra": [
+      {
+        "monospace": false,
+        "text": "Digest Type: 2 / SHA-25"
+      }
+    ]
+  }
+]

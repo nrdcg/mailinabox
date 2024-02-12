@@ -1,0 +1,15 @@
+{
+  "backups": [
+    {
+      "date": "20200801T023706Z",
+      "date_delta": "15 hours, 40 minutes",
+      "date_str": "2020-08-01 03:37:06 BST",
+      "deleted_in": "approx. 6 days",
+      "full": false,
+      "size": 125332,
+      "volumes": 1
+    }
+  ],
+  "unmatched_file_size": 0,
+  "error": "Something is wrong with the backup"
+}

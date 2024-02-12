@@ -99,3 +99,7 @@ issues:
       linters:
         - funlen
         - gosec
+    - path: mailinabox_test.go
+      linters:
+        - unparam
+      text: "testHandler` - `statusCode` always receives `http.StatusOK` \\(`200`\\)"
