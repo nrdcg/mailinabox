@@ -30,8 +30,8 @@ type Client struct {
 	System *SystemService
 }
 
-// NewClient creates a new Client.
-func NewClient(apiURL, email, password string) (*Client, error) {
+// New creates a new Client.
+func New(apiURL, email, password string) (*Client, error) {
 	baseURL, err := url.Parse(apiURL)
 	if err != nil {
 		return nil, err
