@@ -70,3 +70,13 @@ func main() {
 ## API Documentation
 
 - [API docs](https://mailinabox.email/api-docs.html)
+
+## Supported APIs
+
+- [x] User API
+- [x] Mail API
+- [x] DNS API
+- [ ] SSL API
+- [ ] Web API
+- [ ] MFA API
+- [x] System API
