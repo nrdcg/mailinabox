@@ -11,7 +11,59 @@ A Mail-in-a-Box API client written in Go.
 ## Examples
 
 ```go
+package main
 
+import (
+	"context"
+	"fmt"
+
+	"github.com/nrdcg/mailinabox"
+)
+
+func main() {
+	client, err := mailinabox.NewClient("https://example.com", "user@example.com", "secret")
+	if err != nil {
+		panic(err)
+	}
+
+	record := mailinabox.Record{
+		Name:  "example.com",
+		Type:  "A",
+		Value: "10.0.0.1",
+	}
+
+	resp, err := client.DNS.AddRecord(context.Background(), record)
+	if err != nil {
+		panic(err)
+	}
+
+	fmt.Println(resp)
+}
+```
+
+```go
+package mailinabox_test
+
+import (
+	"context"
+	"fmt"
+
+	"github.com/nrdcg/mailinabox"
+)
+
+func main() {
+	client, err := mailinabox.NewClient("https://example.com", "user@example.com", "secret")
+	if err != nil {
+		panic(err)
+	}
+
+	resp, err := client.System.Reboot(context.Background())
+	if err != nil {
+		panic(err)
+	}
+
+	fmt.Println(resp)
+}
 ```
 
 
