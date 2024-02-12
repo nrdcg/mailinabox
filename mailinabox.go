@@ -26,6 +26,7 @@ type Client struct {
 
 	DNS  *DNSService
 	User *UserService
+	Mail *MailService
 }
 
 // NewClient creates a new Client.
@@ -46,6 +47,7 @@ func NewClient(apiURL, email, password string) (*Client, error) {
 
 	client.DNS = (*DNSService)(&client.common)
 	client.User = (*UserService)(&client.common)
+	client.Mail = (*MailService)(&client.common)
 
 	return client, nil
 }

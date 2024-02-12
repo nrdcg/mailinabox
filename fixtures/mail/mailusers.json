@@ -1,0 +1,15 @@
+[
+  {
+    "domain": "example.com",
+    "users": [
+      {
+        "email": "user@example.com",
+        "privileges": [
+          "admin"
+        ],
+        "status": "active",
+        "mailbox": "/home/user-data/mail/mailboxes/example.com/user"
+      }
+    ]
+  }
+]

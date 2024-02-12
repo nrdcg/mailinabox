@@ -1,0 +1,18 @@
+[
+  {
+    "domain": "example.com",
+    "aliases": [
+      {
+        "address": "user@example.com",
+        "address_display": "user@example.com",
+        "forwards_to": [
+          "user@example.com"
+        ],
+        "permitted_senders": [
+          "user@example.com"
+        ],
+        "required": true
+      }
+    ]
+  }
+]
