@@ -24,7 +24,8 @@ type Client struct {
 
 	common service // Reuse a single struct instead of allocating one for each service on the heap.
 
-	DNS *DNSService
+	DNS  *DNSService
+	User *UserService
 }
 
 // NewClient creates a new Client.
@@ -44,6 +45,7 @@ func NewClient(apiURL, email, password string) (*Client, error) {
 	client.common.client = client
 
 	client.DNS = (*DNSService)(&client.common)
+	client.User = (*UserService)(&client.common)
 
 	return client, nil
 }
