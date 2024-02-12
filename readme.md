@@ -1,6 +1,6 @@
 # Go library for accessing the Mail-in-a-Box API
 
-[![Build Status](https://github.com/nrdcg/mailinabox/workflows/Main/badge.svg?branch=master)](https://github.com/nrdcg/mailinabox/actions)
+[![Build Status](https://github.com/nrdcg/mailinabox/actions/workflows/main.yml/badge.svg)](https://github.com/nrdcg/mailinabox/actions/workflows/main.yml)
 [![PkgGoDev](https://pkg.go.dev/badge/github.com/nrdcg/mailinabox)](https://pkg.go.dev/github.com/nrdcg/mailinabox)
 [![Go Report Card](https://goreportcard.com/badge/github.com/nrdcg/mailinabox)](https://goreportcard.com/report/github.com/nrdcg/mailinabox)
 
