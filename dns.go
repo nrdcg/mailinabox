@@ -40,6 +40,7 @@ func (z *Zones) UnmarshalJSON(data []byte) error {
 	}
 
 	var all []Zone
+
 	for _, message := range a {
 		var b []json.RawMessage
 		if err := json.Unmarshal(message, &b); err != nil {
