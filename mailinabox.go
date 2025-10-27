@@ -31,7 +31,7 @@ type Client struct {
 }
 
 // New creates a new Client.
-func New(apiURL, email, password string) (*Client, error) {
+func New(apiURL, email, password string, opts ...Option) (*Client, error) {
 	baseURL, err := url.Parse(apiURL)
 	if err != nil {
 		return nil, err
@@ -42,6 +42,13 @@ func New(apiURL, email, password string) (*Client, error) {
 		baseURL:    baseURL,
 		email:      email,
 		password:   password,
+	}
+
+	for _, opt := range opts {
+		err := opt(client)
+		if err != nil {
+			return nil, err
+		}
 	}
 
 	client.common.client = client
@@ -114,4 +121,16 @@ func boolToIntStr(v bool) string {
 	}
 
 	return "0"
+}
+
+type Option func(*Client) error
+
+func WithHTTPClient(client *http.Client) Option {
+	return func(c *Client) error {
+		if client != nil {
+			c.httpClient = client
+		}
+
+		return nil
+	}
 }

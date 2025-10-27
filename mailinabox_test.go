@@ -19,10 +19,8 @@ func setupTest(t *testing.T) (*Client, *http.ServeMux) {
 	server := httptest.NewServer(mux)
 	t.Cleanup(server.Close)
 
-	client, err := New(server.URL, "example@example.com", "secret")
+	client, err := New(server.URL, "example@example.com", "secret", WithHTTPClient(server.Client()))
 	require.NoError(t, err)
-
-	client.httpClient = server.Client()
 
 	return client, mux
 }
