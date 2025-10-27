@@ -21,6 +21,7 @@ linters:
     - mnd
     - nilnil
     - nlreturn
+    - noinlineerr
     - paralleltest
     - prealloc
     - rowserrcheck # not relevant (SQL)
@@ -29,6 +30,7 @@ linters:
     - tparallel
     - varnamelen
     - wrapcheck
+    - wsl # deprecated
 
   settings:
     depguard:
